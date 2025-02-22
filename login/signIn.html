@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/css.css">
+</head>
+<body>
+   <section class="full-screen text-white">
+    <div class="container ">
+        <div class="form">
+        <div class="content">
+            <h4>SignIn</h4>
+            <p>Welcome onboard with us!</p>
+        </div>
+            <form action="#" autocomplete="off">
+    <div class="input-box mt-4">
+        <input type="email" id="Email" required>
+        <label for="Email">Email</label>
+        <i class="bi bi-envelope-heart-fill"></i>
+    </div>
+    <div class="input-box mt-4">
+        <input type="password" id="pass" required>
+        <label for="pass">Password</label>
+        <i class="bi bi-eye-fill" id="eye">
+        </i> 
+    </div>
+    <div class="forget">
+        <span><input type="checkbox" class="is" ><span>Remember Me</span></span>
+        <a href="#">Forget Password</a>
+    </div>
+    <div class="register mt-5">
+        <button type="button" class="mb-3 btn btn-dark w-25 " id="SignIN">SignIn</button>
+        <p class="text-center text-white-50">Don't have a account <a id="register" style="cursor: pointer;" class="text-light">Register</a></p>
+    </div>
+</form>
+</div>
+</div>
+   </section>
+   <div class="popItem bg-dark w-50" id="popItem">
+    <div class="text-danger d-flex gap-4 justify-content-center align-items-center">
+    <h1 class=" text-center">Find The Error</h1>
+    <i id="exit" class="bi bi-x-circle" style="cursor: pointer;color: #fff;"></i>
+</div>
+    <p class="text-center text-danger" id="mail">Please Enter Your correct Email</p>
+    <p class="text-center text-danger" id="password">Please Enter Your correct password</p>
+   </div>
+</body>
+<script src="vendor/bootstrap.bundle.js" defer ></script>
+<script src="vendor/main.js" defer ></script>
+
+</html>

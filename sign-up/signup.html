@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/bootstrap-icons.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/css.css">
+</head>
+<body>
+    <section class="full-screen text-white">
+        <div class="container ">
+            <div class="form">
+            <div class="content">
+                <h4>SignUp</h4>
+                <p>Welcome onboard with us!</p>
+            </div>
+                <form action="#" autocomplete="off">
+        <div class="input-box mt-4">
+            <input  type="text" id="Fname" required>
+            <label for="Fname">FirstName</label>
+            <i class="bi bi-person-fill"></i>
+        </div>
+        <div class="input-box mt-4">
+            <input   type="text" id="Lname" required>
+            <label for="Lname">LastName</label>
+            <i class="bi bi-person-fill"></i>
+        </div>
+        <div class="input-box mt-4">
+            <input   type="email" id="email" required>
+            <label for="email">Email</label>
+            <i class="bi bi-envelope-heart-fill"></i>
+        </div>
+        <div class="input-box mt-4">
+            <input   type="password" id="pass" required>
+            <label for="pass">Password</label>
+            <i class="bi bi-eye-fill eye1" > </i> 
+        </div>
+        <div class="input-box mt-4">
+            <input    type="password" id="pass1" required>
+            <label for="pass1">Confirm Password</label>
+            <i class="bi bi-eye-fill eye2"> </i> 
+        </div>
+        <div class="register mt-5">
+            <button type="button" class="mb-3 btn btn-dark w-25 " id="SignUp">SignUp</button>
+        </div>
+    </form>
+    </div>
+    </div>
+       </section>
+       <div class="popItem bg-dark " id="popItem">
+        <div class="text-danger d-flex gap-4 justify-content-center align-items-center">
+            <i class="bi bi-exclamation-circle"></i>
+        <h1 class=" text-center">Find The Error</h1>
+        <i id="exit" class="bi bi-x-circle" style="cursor: pointer;color: #fff;"></i>
+    </div>
+        <p class="text-danger" id="name">please Enter your FirstName & LastName At least two Characters</p>
+        <p id="not-Exist" class="text-danger">please Enter another Email <span>because is Already Exist</span> </p>
+        <p id="mail" class="text-danger">please Enter Your Email</p>
+        <p class="text-danger text-center" id="password">please At Least 8-15 Characters or digit</p>
+        <p class="text-danger" id="duplicate">please Check for password is duplicate in confirm password</p>
+       </div>
+</body>
+<script src="vendor/bootstrap.bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/openpgp/5.6.0/openpgp.min.js"></script>
+<script src="vendor/main.js"></script>
+
+</html>
